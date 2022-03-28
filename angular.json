@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "cluba-website-ui": "apps/cluba-website-ui",
+    "cluba-website-ui-e2e": "apps/cluba-website-ui-e2e"
+  }
+}

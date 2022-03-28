@@ -1,0 +1,28 @@
+{
+  "root": "apps/cluba-website-ui-e2e",
+  "sourceRoot": "apps/cluba-website-ui-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/cluba-website-ui-e2e/cypress.json",
+        "devServerTarget": "cluba-website-ui:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "cluba-website-ui:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/cluba-website-ui-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["cluba-website-ui"]
+}

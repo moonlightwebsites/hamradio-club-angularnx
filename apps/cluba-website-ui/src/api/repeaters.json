@@ -1,0 +1,16 @@
+[
+    {    "id" : 1,
+        "callsign" : "WX1ABC",
+        "city" : "Anytown",
+        "modes" : "FM",
+        "frequency" : "147.000",
+        "toneIn" : "88.5"
+    },
+    {    "id" : 2,
+        "callsign" : "KD1ABC",
+        "city" : "Othertown",
+        "modes" : "FM",
+        "frequency" : "146.91",
+        "toneIn" : "none"
+    }
+]

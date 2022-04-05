@@ -1,0 +1,17 @@
+<div class="rounded shadow">
+<h2>Repeaters</h2> 
+<table>
+    <thead>
+        <td>Call Sign</td>
+        <td>Frequency</td>
+        <td>City</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let repeater of repeaterList">
+            <td>{{repeater.callsign}}</td>
+            <td>{{repeater.frequency}}</td>
+            <td>{{repeater.city}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

@@ -1,0 +1,14 @@
+[
+    {    "id" : 1,
+        "dateTime" : "Every Sunday 7:00",
+        "repeaterList" : [1,2],
+        "name" : "A traffic net",
+        "description" : "Some long description here"
+    },
+    {    "id" : 2,
+        "dateTime" : "Every Monday 8:00",
+        "repeaterList" : [1],
+        "name" : "A local net",
+        "description" : "Some other long description here"
+    }
+]

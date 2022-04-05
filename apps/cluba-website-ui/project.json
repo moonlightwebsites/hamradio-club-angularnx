@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/cluba-website-ui",
         "index": "apps/cluba-website-ui/src/index.html",
@@ -16,9 +18,13 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/cluba-website-ui/src/favicon.ico",
-          "apps/cluba-website-ui/src/assets"
+          "apps/cluba-website-ui/src/assets",
+          "apps/cluba-website-ui/src/api"
         ],
-        "styles": ["apps/cluba-website-ui/src/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+          "apps/cluba-website-ui/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -83,7 +89,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/cluba-website-ui"],
+      "outputs": [
+        "coverage/apps/cluba-website-ui"
+      ],
       "options": {
         "jestConfig": "apps/cluba-website-ui/jest.config.js",
         "passWithNoTests": true

@@ -1,0 +1,17 @@
+<div class="rounded shadow">
+    <h2>Nets</h2> 
+    <table>
+        <thead>
+            <td>Date Time</td>
+            <td>Name</td>
+            <td>Description</td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let net of netList">
+                <td>{{net.dateTime}}</td>
+                <td>{{net.name}}</td>
+                <td>{{net.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>

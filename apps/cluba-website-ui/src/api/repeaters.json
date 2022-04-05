@@ -12,5 +12,12 @@
         "modes" : "FM",
         "frequency" : "146.91",
         "toneIn" : "none"
+    },
+    {    "id" : 3,
+        "callsign" : "N1ZZZ",
+        "city" : "NewCity",
+        "modes" : "FM",
+        "frequency" : "146.94",
+        "toneIn" : "none"
     }
 ]

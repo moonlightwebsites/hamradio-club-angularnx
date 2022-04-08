@@ -47,4 +47,4 @@ jobs:
 
     - name: Deploy
       if: success()
-      run: aws s3 sync ./dist/apps/cluba-website-ui s3://ham-cluba-website-ui.com
+      run: aws s3 sync ./dist/apps/cluba-website-ui s3://${{ secrets.AWS_S3_BUCKET }}

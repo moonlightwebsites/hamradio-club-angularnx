@@ -9,7 +9,7 @@
     <tbody>
         <tr *ngFor="let repeater of repeaterList">
             <td>{{repeater.callsign}}</td>
-            <td>{{repeater.frequency}}</td>
+            <td>{{repeater.frequency}} <sup *ngIf="repeater.toneIn !== 'none'" class="pltone">(PL: {{repeater.toneIn}})</sup> </td>
             <td>{{repeater.city}}</td>
         </tr>
     </tbody>

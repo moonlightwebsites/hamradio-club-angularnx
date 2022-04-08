@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'cluba-website-ui';
+  title = 'cluba-website-ui-notused';
 }

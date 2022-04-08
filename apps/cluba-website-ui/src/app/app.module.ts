@@ -12,6 +12,7 @@ import { RepeaterListComponent } from './shared/repeater-list.component';
 import { NetListComponent } from './shared/net-list.component';
 import { ArrlLearnComponent } from './shared/arrl-learn.component';
 import { NotYetComponent } from './not-yet.component';
+import { LearningMaterialsComponent } from './welcome/learning-materials.component';
 
 const routes: Routes = [
   {path: 'welcome', component: WelcomeComponent},
@@ -20,7 +21,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, WelcomeComponent, HeroComponent, RepeaterListComponent, NetListComponent, ArrlLearnComponent, NotYetComponent],
+  declarations: [AppComponent, WelcomeComponent, HeroComponent, RepeaterListComponent, NetListComponent, ArrlLearnComponent, NotYetComponent, LearningMaterialsComponent],
   imports: [BrowserModule, BrowserAnimationsModule, LayoutModule, HttpClientModule,
      RouterModule.forRoot(routes)
     ],

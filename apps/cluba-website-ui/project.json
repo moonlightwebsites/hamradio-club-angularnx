@@ -19,7 +19,11 @@
         "assets": [
           "apps/cluba-website-ui/src/favicon.ico",
           "apps/cluba-website-ui/src/assets",
-          "apps/cluba-website-ui/src/api"
+          {
+            "input": "libs/shared/assets",
+            "glob": "**/*",
+            "output": "assets"
+          }
         ],
         "styles": [
           "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",

@@ -8,7 +8,7 @@ import { INet } from '../models/models';
 })
 export class NetsService {
 
-  private netsUrl = 'api/nets.json';
+  private netsUrl = 'assets/data/nets.json';
   constructor(private httpClient: HttpClient) { }
   
   getNetList() : Observable<INet[]>{

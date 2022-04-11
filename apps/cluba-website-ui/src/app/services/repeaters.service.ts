@@ -8,7 +8,7 @@ import { IRepeater } from '../models/models';
 })
 export class RepeatersService {
 
-  private repeaterUrl = 'api/repeaters.json';
+  private repeaterUrl = 'assets/data/repeaters.json';
   constructor(private httpClient: HttpClient) { }
   
   getRepeaterList() : Observable<IRepeater[]>{
